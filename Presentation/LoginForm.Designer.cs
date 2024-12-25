@@ -6,10 +6,6 @@ namespace WinFormsApp1
     {
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -18,8 +14,6 @@ namespace WinFormsApp1
             }
             base.Dispose(disposing);
         }
-
-        #region Windows Form Designer generated code
 
         private void InitializeComponent()
         {
@@ -48,13 +42,5 @@ namespace WinFormsApp1
 
             loginButton.AddClickEvent(new EventHandler(LoginButton_Click));
         }
-
-        #endregion
-
-        private UsernameLabel usernameLabel;
-        private PasswordLabel passwordLabel;
-        private UsernameEntry usernameEntry;
-        private PasswordEntry passwordEntry;
-        private LoginButton loginButton;
     }
 }

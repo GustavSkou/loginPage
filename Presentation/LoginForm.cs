@@ -1,9 +1,16 @@
-namespace WinFormsApp1
+namespace WinFormsApp1.Presentation
 {
     public partial class LoginForm : Form
     {
+        private UsernameLabel   usernameLabel;
+        private PasswordLabel   passwordLabel;
+        private UsernameEntry   usernameEntry;
+        private PasswordEntry   passwordEntry;
+        private LoginButton     loginButton;
+
         public LoginForm()
         {
+            
             InitializeComponent();
         }
 
@@ -12,20 +19,26 @@ namespace WinFormsApp1
             if(!IsUsernameValid(usernameEntry.Text) && !IsPasswordValid(passwordEntry.Text)) 
             {
                 MessageBox.Show("Enter a valid username and password");
+                usernameEntry.Clear();
+                passwordEntry.Clear();
                 return;
             }
 
             if (!IsUsernameValid(usernameEntry.Text)) 
             { 
                 MessageBox.Show("Enter a valid username");
+                usernameEntry.Clear();
                 return;
             }
 
             if (!IsPasswordValid(passwordEntry.Text)) 
             {
                 MessageBox.Show("Enter a valid password");
+                passwordEntry.Clear();
                 return;
             }
+
+
             MessageBox.Show("Login button clicked!");   
         }
 
