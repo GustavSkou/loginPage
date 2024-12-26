@@ -2,7 +2,7 @@
 {
     internal class LoginButton : Button
     {
-        public LoginButton(int pointX, int pointY)
+        public LoginButton(int pointX, int pointY, Form form )
         {
             AutoSize = true;
             Location = new Point(pointX, pointY);

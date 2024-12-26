@@ -2,12 +2,11 @@
 {
     internal class UsernameEntry : TextBox
     {
-        public UsernameEntry(int pointX, int pointY)
+        public UsernameEntry(int pointX, int pointY, Form form )
         {
             AutoSize = true;
-            Location = new Point(pointX, pointY);
             Name = "usernameEntry";
-            Size = new Size(216, 35);
+            Location = new Point ( form.Width / 2 - Size.Width / 2, pointY );
             TabIndex = 0;
         }
     }

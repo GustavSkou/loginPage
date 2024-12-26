@@ -2,7 +2,7 @@
 {
     internal class PasswordLabel : Label
     {
-        public PasswordLabel(int pointX, int pointY)
+        public PasswordLabel(int pointX, int pointY, Form form )
         {
             AutoSize = true;
             Location = new Point(pointX, pointY);

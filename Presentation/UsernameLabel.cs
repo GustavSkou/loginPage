@@ -2,7 +2,7 @@
 {
     internal class UsernameLabel : Label
     {
-        public UsernameLabel(int pointX, int pointY)
+        public UsernameLabel(int pointX, int pointY, Form form )
         {
             AutoSize = true;
             Location = new Point(pointX, pointY);
